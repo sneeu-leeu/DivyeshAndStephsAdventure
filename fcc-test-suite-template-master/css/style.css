@@ -63,6 +63,16 @@ code {
     word-wrap: break-word;
   
   }
+
+pre {
+    color:#000;
+    padding: 1em;
+    background-color: #f8f9fa;
+    border : 1px solid #eaecf0;
+    overflow-x: hidden;
+    white-space: pre-wrap; 
+    word-wrap: break-word;
+}
   #navbar { 
     width: 25% ;
     padding: 0px;
