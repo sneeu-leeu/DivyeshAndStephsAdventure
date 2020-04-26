@@ -7,3 +7,14 @@
     font-variant-caps: all-petite-caps;
     font-size: 20px;
 }
+
+@media (max-width: 700px) {
+    body {
+        background-color: grey;
+    }
+}
+@media (max-width: 1024px) {
+    body {
+        background-color: grey;
+    }
+}
