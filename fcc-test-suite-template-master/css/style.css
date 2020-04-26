@@ -1,25 +1,22 @@
-#navbar { 
-    width: 25% ;
-    padding: 0px;
-    height: 100%;
-    background: #dde7e3;
-    position: fixed;
-    font-variant-caps: all-petite-caps;
-    
-}
-
 header {
     font-size: 30px;
+    text-transform: uppercase;
+}
+
+#main-doc header {
+  border-top: 1px solid #bdbdbd;
+  border-bottom: 1px solid #bdbdbd;
+  background-color: #000;
+  color: #fff;
 }
 
 body {
-    padding: 0 ;
     margin: 0;
     font-family: Abel;
 }
 
 #main-doc{
-    margin-top: 30px;
+    padding-top: 10px;
     margin-left: 25%;
     text-align: center;
     grid-template-areas: "Introduction"
@@ -30,6 +27,10 @@ body {
     grid-template-columns: 80%;
     grid-template-rows: repeat(5 , 5fr);
     grid-gap: 30px;
+}
+
+#main-section {
+
 }
 
 #Introduction {
@@ -52,6 +53,78 @@ body {
     grid-area: Function_Declarations;
 }
 
+code {
+    color:#000;
+    padding: 1em;
+    background-color: #f8f9fa;
+    border : 1px solid #eaecf0;
+     overflow-x: hidden;
+    white-space: pre-wrap; 
+    word-wrap: break-word;
+  
+  }
+  #navbar { 
+    width: 25% ;
+    padding: 0px;
+    height: 100%;
+    background: #dde7e3;
+    position: fixed;
+    
+}
+#navbar ul {
+    padding: 0px;
+    overflow: auto;
+    margin: 0px;
+  }
+ #navbar ul li a {
+    /* color: #bdb8bd; */
+    padding: 15px;
+    border-bottom: 1px solid #bdbdbd;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+  }
 
+ 
 
+#navbar ul li a.active {
+    background-color: #594f8d;
+    color: #fff;
+  }
+  
+#navbar ul li:hover{
+    background-color: #594f8d;
+  }
+      
+ #navbar ul li:hover a{
+    color: #fff;
+  }
+  
+ #navbar ul li:hover:not(.active) {
+    background-color: #555;
+    color: #fff;
+  }
+
+  p {
+      font-size: 20px;
+  }
+
+  #navbar header {
+      text-align: center;
+      font-size: 35px;
+      margin-bottom: 10px;
+  }
+
+  .code {
+    padding: 10px;
+    margin: 20px;
+    display: inline-flexbox;
+}
+
+.list li{
+    display: block;
+    padding: 10px;
+}
 
